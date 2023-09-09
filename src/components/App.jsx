@@ -25,7 +25,7 @@ export const App = () => {
     localStorage.setItem('contacts', JSON.stringify(contacts))
   },[contacts]
   )
- const addContact = object => {
+  const addContact = object => {
      const isExist = contacts.find(
       contact =>
         contact.name === object.name || contact.number === object.number
